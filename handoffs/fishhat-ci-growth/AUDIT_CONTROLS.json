@@ -1,0 +1,22 @@
+[
+  {
+    "control": "changed_bytes",
+    "exit_code": 1,
+    "rejection": "Research audit failed: retained length mismatch: accepted-main-jobs.json"
+  },
+  {
+    "control": "missing_job",
+    "exit_code": 1,
+    "rejection": "Research audit failed: incomplete retained job collection"
+  },
+  {
+    "control": "duplicate_job",
+    "exit_code": 1,
+    "rejection": "Research audit failed: duplicate job"
+  },
+  {
+    "control": "foreign_attempt",
+    "exit_code": 1,
+    "rejection": "Research audit failed: job source/run/attempt mismatch"
+  }
+]

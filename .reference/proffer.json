@@ -1,0 +1,82 @@
+{
+  "kind": "handoff",
+  "issue": "https://github.com/nashspence/fishhat/issues/84",
+  "purpose": "Focused research on comment 7102165515: preserve qualification proofs while controlling evidence, custody-scan and CI growth; propose independently reviewable experiments and owned fixture partitions.",
+  "producer": [
+    "OpenAI ChatGPT research agent"
+  ],
+  "requester": "nashspence",
+  "first_step": "Read handoffs/fishhat-ci-growth/HANDOFF.md, confirm fishhat source and the latest issue-84 maintainer direction, and locate the independent acceptance readers/originals. Evaluate the evidence-sink experiment before extending the serial native workload. This handoff does not lift the existing product pause or start issue 450.",
+  "source": {
+    "repository": "nashspence/fishhat",
+    "base": {
+      "ref": "main",
+      "commit": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5"
+    },
+    "work_state": "unchanged"
+  },
+  "artifacts": [
+    "handoffs/fishhat-ci-growth/AUDIT_CONTROLS.json",
+    "handoffs/fishhat-ci-growth/AUDIT_RESULT.json",
+    "handoffs/fishhat-ci-growth/HANDOFF.md",
+    "handoffs/fishhat-ci-growth/VALIDATION.md",
+    "handoffs/fishhat-ci-growth/audit.py",
+    "handoffs/fishhat-ci-growth/evidence/accepted-main-jobs.json",
+    "handoffs/fishhat-ci-growth/evidence/accepted-main-run.json",
+    "handoffs/fishhat-ci-growth/evidence/accepted-slow-unit-excerpt-metadata.json",
+    "handoffs/fishhat-ci-growth/evidence/accepted-slow-unit-excerpt.log",
+    "handoffs/fishhat-ci-growth/evidence/copy-disk-static-count.json",
+    "handoffs/fishhat-ci-growth/evidence/inventory.json",
+    "handoffs/fishhat-ci-growth/evidence/issue-84-comments.json",
+    "handoffs/fishhat-ci-growth/evidence/source-inventory.json"
+  ],
+  "checks": [
+    {
+      "command": "python -m unittest discover -s tests -v",
+      "result": "passed",
+      "source": {
+        "kind": "worktree",
+        "details": "nashspence/proffer research branch handoff/fishhat-84-ci-growth-20261123 based on 2ce5e15c3191fcdc2be70213c0170f57c852a883; existing protocol code and tests unchanged. These checks do not validate fishhat execution."
+      },
+      "environment": "Linux; Python 3.12.14; jsonschema 4.26.0; referencing 0.37.0",
+      "notes": "All 3 existing Proffer tests passed, including fixture and invalid-variant subtests."
+    },
+    {
+      "command": "python check.py .reference/proffer.json",
+      "result": "passed",
+      "source": {
+        "kind": "worktree",
+        "details": "nashspence/proffer research branch handoff/fishhat-84-ci-growth-20261123 based on 2ce5e15c3191fcdc2be70213c0170f57c852a883; existing protocol code and tests unchanged. These checks do not validate fishhat execution."
+      },
+      "environment": "Linux; Python 3.12.14; jsonschema 4.26.0; referencing 0.37.0",
+      "notes": "Record validation only; no acceptance or integration authorization."
+    },
+    {
+      "command": "python handoffs/fishhat-ci-growth/audit.py",
+      "result": "passed",
+      "source": {
+        "kind": "worktree",
+        "details": "nashspence/proffer research branch handoff/fishhat-84-ci-growth-20261123 based on 2ce5e15c3191fcdc2be70213c0170f57c852a883; existing protocol code and tests unchanged. These checks do not validate fishhat execution."
+      },
+      "environment": "Linux; Python 3.12.14; jsonschema 4.26.0; referencing 0.37.0",
+      "notes": "Offline retained-evidence identity, complete job/source/run/attempt joins, timing and inventory arithmetic."
+    },
+    {
+      "command": "python handoffs/fishhat-ci-growth/audit.py --fishhat /workspace/scratch/b0a12860d29d/fishhat",
+      "result": "passed",
+      "source": {
+        "kind": "worktree",
+        "details": "nashspence/proffer research branch handoff/fishhat-84-ci-growth-20261123 based on 2ce5e15c3191fcdc2be70213c0170f57c852a883; existing protocol code and tests unchanged. These checks do not validate fishhat execution."
+      },
+      "environment": "Linux; Python 3.12.14; jsonschema 4.26.0; referencing 0.37.0",
+      "notes": "Also verifies unchanged fishhat f96b83dc20f059d62a4363a63c37bb0ef8c642e5 and all 81 contract/catalogue source files, and statically expands copy_disk to 14 callbacks. No fishhat code imported or executed."
+    }
+  ],
+  "limitations": [
+    "Research only: no fishhat implementation, tests, CI rerun, native workload, product command or release operation executed; no new native qualification or causal performance improvement claimed.",
+    "Native aggregate/trace/ZIP sizes, 23-run historical synthesis, exclusive phase attribution and external frozen-reader timing remain maintainer-reported evidence; those raw originals/readers were not independently acquired or reauthenticated here.",
+    "The 84 sealed-set scans are static partial-work accounting for successful restore copy callbacks, excluding outer checks and source/base/tool/output/image-tool work; not measured physical I/O, total runtime or justification to remove checks.",
+    "Candidate lane boundaries and evidence format changes require independent reader equivalence, current-source proof and complete custody/cleanup controls. All currently required scopes remain required; 37 is the pinned baseline, not a cap.",
+    "This handoff record and offline audit are locally validated; existing Proffer branch CI tests the unchanged protocol/schema fixtures only. None supplies permission to resume paused product work or integrate into fishhat. No issue comment, PR or recipient message is created by this handoff."
+  ]
+}

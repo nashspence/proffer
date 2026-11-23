@@ -1,0 +1,3002 @@
+{
+  "source": "https://api.github.com/repos/nashspence/fishhat/actions/runs/45156202495/jobs?per_page=100",
+  "retrieved_at": "2026-11-23T13:17:51.353Z",
+  "total_count": 26,
+  "jobs": [
+    {
+      "id": 137629637492,
+      "name": "Validation watchdog policy",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-23T10:32:08Z",
+      "completed_at": "2026-11-23T10:32:51Z",
+      "run_id": 45156202495,
+      "run_attempt": 1,
+      "head_sha": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+      "html_url": "https://github.com/nashspence/fishhat/actions/runs/45156202495/job/137629637492",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-23T10:32:09Z",
+          "completed_at": "2026-11-23T10:32:12Z"
+        },
+        {
+          "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-23T10:32:12Z",
+          "completed_at": "2026-11-23T10:32:17Z"
+        },
+        {
+          "name": "Run python3 scripts/validation_timeouts.py bootstrap --github-env \"$GITHUB_ENV\"",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-23T10:32:17Z",
+          "completed_at": "2026-11-23T10:32:17Z"
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-23T10:32:17Z",
+          "completed_at": "2026-11-23T10:32:18Z"
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-23T10:32:18Z",
+          "completed_at": "2026-11-23T10:32:19Z"
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-23T10:32:19Z",
+          "completed_at": "2026-11-23T10:32:20Z"
+        },
+        {
+          "name": "Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-23T10:32:20Z",
+          "completed_at": "2026-11-23T10:32:25Z"
+        },
+        {
+          "name": "Run uv sync --locked --all-packages --group dev --python 3.12",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-23T10:32:25Z",
+          "completed_at": "2026-11-23T10:32:35Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev python -m scripts.validation_workflows --workflow .github/workflows/ci.yml --github-output \"$GITHUB_OUTPUT\"",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-23T10:32:35Z",
+          "completed_at": "2026-11-23T10:32:35Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev python -m scripts.unit_shards reference --repository \"nashspence/fishhat\" --output artifacts/unit-duration-reference",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-23T10:32:35Z",
+          "completed_at": "2026-11-23T10:32:44Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-11-23T10:32:44Z",
+          "completed_at": "2026-11-23T10:32:46Z"
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-11-23T10:32:46Z",
+          "completed_at": "2026-11-23T10:32:46Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-11-23T10:32:46Z",
+          "completed_at": "2026-11-23T10:32:46Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-11-23T10:32:46Z",
+          "completed_at": "2026-11-23T10:32:46Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-11-23T10:32:46Z",
+          "completed_at": "2026-11-23T10:32:46Z"
+        },
+        {
+          "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 22,
+          "started_at": "2026-11-23T10:32:46Z",
+          "completed_at": "2026-11-23T10:32:46Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23,
+          "started_at": "2026-11-23T10:32:46Z",
+          "completed_at": "2026-11-23T10:32:46Z"
+        }
+      ]
+    },
+    {
+      "id": 137632670512,
+      "name": "Public tree and full-history secret scan",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-23T10:33:41Z",
+      "completed_at": "2026-11-23T10:34:33Z",
+      "run_id": 45156202495,
+      "run_attempt": 1,
+      "head_sha": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+      "html_url": "https://github.com/nashspence/fishhat/actions/runs/45156202495/job/137632670512",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-23T10:33:42Z",
+          "completed_at": "2026-11-23T10:33:42Z"
+        },
+        {
+          "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-23T10:33:43Z",
+          "completed_at": "2026-11-23T10:33:47Z"
+        },
+        {
+          "name": "Run python3 scripts/check_public.py --history",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-23T10:33:47Z",
+          "completed_at": "2026-11-23T10:34:30Z"
+        },
+        {
+          "name": "Run bash scripts/ci/secret_scan.sh",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-23T10:34:30Z",
+          "completed_at": "2026-11-23T10:34:32Z"
+        },
+        {
+          "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-23T10:34:32Z",
+          "completed_at": "2026-11-23T10:34:32Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-23T10:34:32Z",
+          "completed_at": "2026-11-23T10:34:32Z"
+        }
+      ]
+    },
+    {
+      "id": 137632670575,
+      "name": "Build and install wheel outside source checkout",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-23T10:34:07Z",
+      "completed_at": "2026-11-23T10:34:50Z",
+      "run_id": 45156202495,
+      "run_attempt": 1,
+      "head_sha": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+      "html_url": "https://github.com/nashspence/fishhat/actions/runs/45156202495/job/137632670575",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-23T10:34:08Z",
+          "completed_at": "2026-11-23T10:34:09Z"
+        },
+        {
+          "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-23T10:34:09Z",
+          "completed_at": "2026-11-23T10:34:11Z"
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-23T10:34:11Z",
+          "completed_at": "2026-11-23T10:34:11Z"
+        },
+        {
+          "name": "Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-23T10:34:11Z",
+          "completed_at": "2026-11-23T10:34:14Z"
+        },
+        {
+          "name": "Run uv sync --locked --all-packages --group dev --python 3.12",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-23T10:34:14Z",
+          "completed_at": "2026-11-23T10:34:29Z"
+        },
+        {
+          "name": "Run uv build --all-packages --wheel --python 3.12",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-23T10:34:29Z",
+          "completed_at": "2026-11-23T10:34:43Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python 3.12 python -m scripts.check_wheel dist",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-23T10:34:43Z",
+          "completed_at": "2026-11-23T10:34:44Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-23T10:34:44Z",
+          "completed_at": "2026-11-23T10:34:46Z"
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-11-23T10:34:46Z",
+          "completed_at": "2026-11-23T10:34:46Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-11-23T10:34:46Z",
+          "completed_at": "2026-11-23T10:34:47Z"
+        },
+        {
+          "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-11-23T10:34:47Z",
+          "completed_at": "2026-11-23T10:34:47Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-11-23T10:34:47Z",
+          "completed_at": "2026-11-23T10:34:47Z"
+        }
+      ]
+    },
+    {
+      "id": 137632670728,
+      "name": "Native Linux prerequisite smoke (not deployment qualification)",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-23T10:36:44Z",
+      "completed_at": "2026-11-23T10:39:06Z",
+      "run_id": 45156202495,
+      "run_attempt": 1,
+      "head_sha": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+      "html_url": "https://github.com/nashspence/fishhat/actions/runs/45156202495/job/137632670728",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-23T10:36:45Z",
+          "completed_at": "2026-11-23T10:36:48Z"
+        },
+        {
+          "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-23T10:36:48Z",
+          "completed_at": "2026-11-23T10:36:54Z"
+        },
+        {
+          "name": "Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-23T10:36:54Z",
+          "completed_at": "2026-11-23T10:36:57Z"
+        },
+        {
+          "name": "Run uv sync --locked --all-packages --group dev --python 3.12",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-23T10:36:57Z",
+          "completed_at": "2026-11-23T10:37:06Z"
+        },
+        {
+          "name": "Run bash scripts/ci/native_smoke.sh --github-hosted-only",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-23T10:37:06Z",
+          "completed_at": "2026-11-23T10:38:35Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python 3.12 python -m scripts.native_smoke_interruption --github-hosted-only --output artifacts/native-smoke-interruption.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-23T10:38:35Z",
+          "completed_at": "2026-11-23T10:38:39Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-23T10:38:39Z",
+          "completed_at": "2026-11-23T10:38:41Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python 3.12 python -m scripts.native_smoke_ssh_qualification --github-hosted-only --output artifacts/native-smoke-ssh-interruption.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-23T10:38:41Z",
+          "completed_at": "2026-11-23T10:38:41Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-23T10:38:41Z",
+          "completed_at": "2026-11-23T10:38:43Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python 3.12 python -m scripts.native_smoke_storage_qualification --github-hosted-only --output artifacts/native-smoke-storage-interruption.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-23T10:38:43Z",
+          "completed_at": "2026-11-23T10:39:00Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-11-23T10:39:00Z",
+          "completed_at": "2026-11-23T10:39:02Z"
+        },
+        {
+          "name": "Record the qualification boundary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-23T10:39:02Z",
+          "completed_at": "2026-11-23T10:39:02Z"
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23,
+          "started_at": "2026-11-23T10:39:02Z",
+          "completed_at": "2026-11-23T10:39:02Z"
+        },
+        {
+          "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 24,
+          "started_at": "2026-11-23T10:39:02Z",
+          "completed_at": "2026-11-23T10:39:02Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 25,
+          "started_at": "2026-11-23T10:39:02Z",
+          "completed_at": "2026-11-23T10:39:02Z"
+        }
+      ]
+    },
+    {
+      "id": 137632670736,
+      "name": "Ruff",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-23T10:34:52Z",
+      "completed_at": "2026-11-23T10:35:10Z",
+      "run_id": 45156202495,
+      "run_attempt": 1,
+      "head_sha": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+      "html_url": "https://github.com/nashspence/fishhat/actions/runs/45156202495/job/137632670736",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-23T10:34:53Z",
+          "completed_at": "2026-11-23T10:34:54Z"
+        },
+        {
+          "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-23T10:34:54Z",
+          "completed_at": "2026-11-23T10:34:56Z"
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-23T10:34:56Z",
+          "completed_at": "2026-11-23T10:34:56Z"
+        },
+        {
+          "name": "Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-23T10:34:56Z",
+          "completed_at": "2026-11-23T10:34:58Z"
+        },
+        {
+          "name": "Run uv sync --locked --all-packages --group dev --python 3.12",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-23T10:34:58Z",
+          "completed_at": "2026-11-23T10:35:07Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python 3.12 ruff check packages fishhat some-implementations scripts tests",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-23T10:35:07Z",
+          "completed_at": "2026-11-23T10:35:07Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python 3.12 ruff format --check packages fishhat some-implementations scripts tests",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-23T10:35:07Z",
+          "completed_at": "2026-11-23T10:35:07Z"
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-23T10:35:07Z",
+          "completed_at": "2026-11-23T10:35:07Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-23T10:35:07Z",
+          "completed_at": "2026-11-23T10:35:07Z"
+        },
+        {
+          "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-11-23T10:35:07Z",
+          "completed_at": "2026-11-23T10:35:07Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-11-23T10:35:07Z",
+          "completed_at": "2026-11-23T10:35:07Z"
+        }
+      ]
+    },
+    {
+      "id": 137632670757,
+      "name": "Dependency audit",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-23T10:35:17Z",
+      "completed_at": "2026-11-23T10:35:45Z",
+      "run_id": 45156202495,
+      "run_attempt": 1,
+      "head_sha": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+      "html_url": "https://github.com/nashspence/fishhat/actions/runs/45156202495/job/137632670757",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-23T10:35:17Z",
+          "completed_at": "2026-11-23T10:35:20Z"
+        },
+        {
+          "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-23T10:35:20Z",
+          "completed_at": "2026-11-23T10:35:25Z"
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-23T10:35:25Z",
+          "completed_at": "2026-11-23T10:35:25Z"
+        },
+        {
+          "name": "Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-23T10:35:25Z",
+          "completed_at": "2026-11-23T10:35:29Z"
+        },
+        {
+          "name": "Run uv sync --locked --all-packages --group dev --python 3.12",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-23T10:35:29Z",
+          "completed_at": "2026-11-23T10:35:39Z"
+        },
+        {
+          "name": "Run uv export --quiet --locked --all-packages --all-groups --no-emit-workspace --no-hashes --format requirements-txt --output-file \"$RUNNER_TEMP/audit-requirements.txt\"",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-23T10:35:39Z",
+          "completed_at": "2026-11-23T10:35:41Z"
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-23T10:35:41Z",
+          "completed_at": "2026-11-23T10:35:41Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-11-23T10:35:41Z",
+          "completed_at": "2026-11-23T10:35:41Z"
+        },
+        {
+          "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-23T10:35:41Z",
+          "completed_at": "2026-11-23T10:35:42Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-23T10:35:42Z",
+          "completed_at": "2026-11-23T10:35:42Z"
+        }
+      ]
+    },
+    {
+      "id": 137632670860,
+      "name": "Licensing provenance",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-23T10:36:05Z",
+      "completed_at": "2026-11-23T10:36:30Z",
+      "run_id": 45156202495,
+      "run_attempt": 1,
+      "head_sha": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+      "html_url": "https://github.com/nashspence/fishhat/actions/runs/45156202495/job/137632670860",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-23T10:36:06Z",
+          "completed_at": "2026-11-23T10:36:07Z"
+        },
+        {
+          "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-23T10:36:07Z",
+          "completed_at": "2026-11-23T10:36:10Z"
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-23T10:36:10Z",
+          "completed_at": "2026-11-23T10:36:10Z"
+        },
+        {
+          "name": "Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-23T10:36:10Z",
+          "completed_at": "2026-11-23T10:36:13Z"
+        },
+        {
+          "name": "Run uv sync --locked --all-packages --group dev --python 3.12",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-23T10:36:13Z",
+          "completed_at": "2026-11-23T10:36:26Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev python -m reuse lint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-23T10:36:26Z",
+          "completed_at": "2026-11-23T10:36:27Z"
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-23T10:36:27Z",
+          "completed_at": "2026-11-23T10:36:27Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-11-23T10:36:27Z",
+          "completed_at": "2026-11-23T10:36:27Z"
+        },
+        {
+          "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-23T10:36:27Z",
+          "completed_at": "2026-11-23T10:36:28Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-23T10:36:28Z",
+          "completed_at": "2026-11-23T10:36:28Z"
+        }
+      ]
+    },
+    {
+      "id": 137632670903,
+      "name": "Validation watchdog regressions (4)",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-23T10:34:36Z",
+      "completed_at": "2026-11-23T10:36:42Z",
+      "run_id": 45156202495,
+      "run_attempt": 1,
+      "head_sha": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+      "html_url": "https://github.com/nashspence/fishhat/actions/runs/45156202495/job/137632670903",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-23T10:34:37Z",
+          "completed_at": "2026-11-23T10:34:40Z"
+        },
+        {
+          "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-23T10:34:40Z",
+          "completed_at": "2026-11-23T10:34:46Z"
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-23T10:34:46Z",
+          "completed_at": "2026-11-23T10:34:46Z"
+        },
+        {
+          "name": "Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-23T10:34:46Z",
+          "completed_at": "2026-11-23T10:34:50Z"
+        },
+        {
+          "name": "Run uv sync --locked --all-packages --group dev --python 3.12",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-23T10:34:50Z",
+          "completed_at": "2026-11-23T10:35:01Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev python -m scripts.validation run --target unit -- python -m pytest -q tests/test_ci_config.py tests/test_validation_timeouts.py tests/test_native_smoke.py tests/test_native_smoke_ssh.py tests/test_native_smoke_loop.py tests/test_native_smoke_mount.py tests/test_native_smoke_storage.py tests/test_native_linux_enrollment.py tests/test_native_linux_controller.py tests/test_native_linux_images.py tests/test_native_linux_guest.py tests/test_native_owner_bootstrap.py tests/test_owner_launcher.py tests/test_protected_owner_launcher.py tests/test_owner_launcher_growth.py tests/test_native_owner_launcher.py tests/test_protected_owner_entrypoint.py tests/test_protected_owner_wheels.py tests/test_native_owner_entrypoint.py tests/test_native_owner_identity.py tests/test_native_owner_checkpoint.py tests/test_owner_identity_store.py tests/test_protected_checkpoint_store.py tests/test_host_owner_identity_cli.py tests/test_native_linux_storage.py tests/test_native_linux_processes.py tests/test_native_linux_transport.py tests/test_native_linux_exhaustion.py tests/test_native_linux_reboot.py tests/test_native_linux_snapshots.py tests/test_native_linux_successor.py tests/test_native_linux_successor_timeline.py tests/test_native_linux_roundtrip.py tests/test_native_linux_restart.py tests/test_native_linux_restore.py tests/test_native_linux_restore_source.py tests/test_native_linux_restored_boot.py tests/test_journal_concurrency.py tests/test_adapter_process.py -n 2 --dist=worksteal --max-worker-restart=0 --durations=30",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-23T10:35:01Z",
+          "completed_at": "2026-11-23T10:36:36Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-23T10:36:36Z",
+          "completed_at": "2026-11-23T10:36:38Z"
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-23T10:36:38Z",
+          "completed_at": "2026-11-23T10:36:38Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-23T10:36:38Z",
+          "completed_at": "2026-11-23T10:36:38Z"
+        },
+        {
+          "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-11-23T10:36:38Z",
+          "completed_at": "2026-11-23T10:36:39Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-11-23T10:36:39Z",
+          "completed_at": "2026-11-23T10:36:39Z"
+        }
+      ]
+    },
+    {
+      "id": 137632670947,
+      "name": "Validation watchdog regressions (1)",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-23T10:37:09Z",
+      "completed_at": "2026-11-23T10:38:43Z",
+      "run_id": 45156202495,
+      "run_attempt": 1,
+      "head_sha": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+      "html_url": "https://github.com/nashspence/fishhat/actions/runs/45156202495/job/137632670947",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-23T10:37:09Z",
+          "completed_at": "2026-11-23T10:37:11Z"
+        },
+        {
+          "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-23T10:37:11Z",
+          "completed_at": "2026-11-23T10:37:17Z"
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-23T10:37:17Z",
+          "completed_at": "2026-11-23T10:37:17Z"
+        },
+        {
+          "name": "Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-23T10:37:17Z",
+          "completed_at": "2026-11-23T10:37:20Z"
+        },
+        {
+          "name": "Run uv sync --locked --all-packages --group dev --python 3.12",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-23T10:37:20Z",
+          "completed_at": "2026-11-23T10:37:30Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev python -m scripts.validation run --target unit -- python -m pytest -q tests/test_ci_config.py tests/test_validation_timeouts.py tests/test_native_smoke.py tests/test_native_smoke_ssh.py tests/test_native_smoke_loop.py tests/test_native_smoke_mount.py tests/test_native_smoke_storage.py tests/test_native_linux_enrollment.py tests/test_native_linux_controller.py tests/test_native_linux_images.py tests/test_native_linux_guest.py tests/test_native_owner_bootstrap.py tests/test_owner_launcher.py tests/test_protected_owner_launcher.py tests/test_owner_launcher_growth.py tests/test_native_owner_launcher.py tests/test_protected_owner_entrypoint.py tests/test_protected_owner_wheels.py tests/test_native_owner_entrypoint.py tests/test_native_owner_identity.py tests/test_native_owner_checkpoint.py tests/test_owner_identity_store.py tests/test_protected_checkpoint_store.py tests/test_host_owner_identity_cli.py tests/test_native_linux_storage.py tests/test_native_linux_processes.py tests/test_native_linux_transport.py tests/test_native_linux_exhaustion.py tests/test_native_linux_reboot.py tests/test_native_linux_snapshots.py tests/test_native_linux_successor.py tests/test_native_linux_successor_timeline.py tests/test_native_linux_roundtrip.py tests/test_native_linux_restart.py tests/test_native_linux_restore.py tests/test_native_linux_restore_source.py tests/test_native_linux_restored_boot.py tests/test_journal_concurrency.py tests/test_adapter_process.py -n 2 --dist=worksteal --max-worker-restart=0 --durations=30",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-23T10:37:30Z",
+          "completed_at": "2026-11-23T10:38:40Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-23T10:38:40Z",
+          "completed_at": "2026-11-23T10:38:41Z"
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-23T10:38:41Z",
+          "completed_at": "2026-11-23T10:38:41Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-23T10:38:41Z",
+          "completed_at": "2026-11-23T10:38:41Z"
+        },
+        {
+          "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-11-23T10:38:41Z",
+          "completed_at": "2026-11-23T10:38:41Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-11-23T10:38:41Z",
+          "completed_at": "2026-11-23T10:38:41Z"
+        }
+      ]
+    },
+    {
+      "id": 137632671026,
+      "name": "Component and compatibility policy",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-23T10:36:32Z",
+      "completed_at": "2026-11-23T10:37:07Z",
+      "run_id": 45156202495,
+      "run_attempt": 1,
+      "head_sha": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+      "html_url": "https://github.com/nashspence/fishhat/actions/runs/45156202495/job/137632671026",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-23T10:36:32Z",
+          "completed_at": "2026-11-23T10:36:33Z"
+        },
+        {
+          "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-23T10:36:33Z",
+          "completed_at": "2026-11-23T10:36:36Z"
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-23T10:36:36Z",
+          "completed_at": "2026-11-23T10:36:36Z"
+        },
+        {
+          "name": "Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-23T10:36:36Z",
+          "completed_at": "2026-11-23T10:36:38Z"
+        },
+        {
+          "name": "Run uv sync --locked --all-packages --group dev --python 3.12",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-23T10:36:38Z",
+          "completed_at": "2026-11-23T10:36:53Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev python -m scripts.project_policy --history",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-23T10:36:53Z",
+          "completed_at": "2026-11-23T10:36:57Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev python -m scripts.validation run --target operation-qualification -- python -m scripts.operation_qualification check",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-23T10:36:57Z",
+          "completed_at": "2026-11-23T10:36:58Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev python -m scripts.engineering check",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-23T10:36:58Z",
+          "completed_at": "2026-11-23T10:37:03Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev python -m scripts.check_repository --scope public",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-23T10:37:03Z",
+          "completed_at": "2026-11-23T10:37:05Z"
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-11-23T10:37:05Z",
+          "completed_at": "2026-11-23T10:37:05Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-11-23T10:37:05Z",
+          "completed_at": "2026-11-23T10:37:05Z"
+        },
+        {
+          "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-11-23T10:37:05Z",
+          "completed_at": "2026-11-23T10:37:05Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-11-23T10:37:05Z",
+          "completed_at": "2026-11-23T10:37:05Z"
+        }
+      ]
+    },
+    {
+      "id": 137632671084,
+      "name": "Strict mypy",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-23T10:36:44Z",
+      "completed_at": "2026-11-23T10:37:15Z",
+      "run_id": 45156202495,
+      "run_attempt": 1,
+      "head_sha": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+      "html_url": "https://github.com/nashspence/fishhat/actions/runs/45156202495/job/137632671084",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-23T10:36:44Z",
+          "completed_at": "2026-11-23T10:36:46Z"
+        },
+        {
+          "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-23T10:36:46Z",
+          "completed_at": "2026-11-23T10:36:48Z"
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-23T10:36:48Z",
+          "completed_at": "2026-11-23T10:36:48Z"
+        },
+        {
+          "name": "Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-23T10:36:48Z",
+          "completed_at": "2026-11-23T10:36:50Z"
+        },
+        {
+          "name": "Run uv sync --locked --all-packages --group dev --python 3.12",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-23T10:36:50Z",
+          "completed_at": "2026-11-23T10:37:04Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python 3.12 mypy",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-23T10:37:04Z",
+          "completed_at": "2026-11-23T10:37:12Z"
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-23T10:37:12Z",
+          "completed_at": "2026-11-23T10:37:12Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-11-23T10:37:12Z",
+          "completed_at": "2026-11-23T10:37:12Z"
+        },
+        {
+          "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-23T10:37:12Z",
+          "completed_at": "2026-11-23T10:37:12Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-23T10:37:12Z",
+          "completed_at": "2026-11-23T10:37:12Z"
+        }
+      ]
+    },
+    {
+      "id": 137632672826,
+      "name": "Dependency review",
+      "status": "completed",
+      "conclusion": "skipped",
+      "started_at": "2026-11-23T10:32:51Z",
+      "completed_at": "2026-11-23T10:32:51Z",
+      "run_id": 45156202495,
+      "run_attempt": 1,
+      "head_sha": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+      "html_url": "https://github.com/nashspence/fishhat/actions/runs/45156202495/job/137632672826",
+      "steps": []
+    },
+    {
+      "id": 137633707969,
+      "name": "Installed distributions (ubuntu-24.04)",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-23T10:37:17Z",
+      "completed_at": "2026-11-23T10:41:03Z",
+      "run_id": 45156202495,
+      "run_attempt": 1,
+      "head_sha": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+      "html_url": "https://github.com/nashspence/fishhat/actions/runs/45156202495/job/137633707969",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-23T10:37:18Z",
+          "completed_at": "2026-11-23T10:37:22Z"
+        },
+        {
+          "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-23T10:37:22Z",
+          "completed_at": "2026-11-23T10:37:28Z"
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-23T10:37:28Z",
+          "completed_at": "2026-11-23T10:37:28Z"
+        },
+        {
+          "name": "Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-23T10:37:28Z",
+          "completed_at": "2026-11-23T10:37:32Z"
+        },
+        {
+          "name": "Run uv sync --locked --all-packages --group dev --python 3.12",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-23T10:37:32Z",
+          "completed_at": "2026-11-23T10:37:43Z"
+        },
+        {
+          "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-23T10:37:43Z",
+          "completed_at": "2026-11-23T10:37:45Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev python -m scripts.distributions prepare --bundle artifacts/scaffold-bundle",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-23T10:37:45Z",
+          "completed_at": "2026-11-23T10:37:48Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev python -m scripts.distributions smoke --bundle artifacts/scaffold-bundle",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-23T10:37:48Z",
+          "completed_at": "2026-11-23T10:40:56Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev python -m scripts.distributions archive --bundle artifacts/scaffold-bundle",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-23T10:40:56Z",
+          "completed_at": "2026-11-23T10:40:57Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-23T10:40:57Z",
+          "completed_at": "2026-11-23T10:41:00Z"
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-11-23T10:41:00Z",
+          "completed_at": "2026-11-23T10:41:00Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-11-23T10:41:00Z",
+          "completed_at": "2026-11-23T10:41:00Z"
+        },
+        {
+          "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-11-23T10:41:00Z",
+          "completed_at": "2026-11-23T10:41:00Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-11-23T10:41:00Z",
+          "completed_at": "2026-11-23T10:41:00Z"
+        }
+      ]
+    },
+    {
+      "id": 137633707986,
+      "name": "Installed distributions (macos-15)",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-23T10:35:47Z",
+      "completed_at": "2026-11-23T10:40:20Z",
+      "run_id": 45156202495,
+      "run_attempt": 1,
+      "head_sha": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+      "html_url": "https://github.com/nashspence/fishhat/actions/runs/45156202495/job/137633707986",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-23T10:35:48Z",
+          "completed_at": "2026-11-23T10:35:50Z"
+        },
+        {
+          "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-23T10:35:50Z",
+          "completed_at": "2026-11-23T10:35:54Z"
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-23T10:35:54Z",
+          "completed_at": "2026-11-23T10:35:54Z"
+        },
+        {
+          "name": "Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-23T10:35:54Z",
+          "completed_at": "2026-11-23T10:35:58Z"
+        },
+        {
+          "name": "Run uv sync --locked --all-packages --group dev --python 3.12",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-23T10:35:58Z",
+          "completed_at": "2026-11-23T10:36:12Z"
+        },
+        {
+          "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-23T10:36:12Z",
+          "completed_at": "2026-11-23T10:36:13Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev python -m scripts.distributions prepare --bundle artifacts/scaffold-bundle",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-23T10:36:13Z",
+          "completed_at": "2026-11-23T10:36:21Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev python -m scripts.distributions smoke --bundle artifacts/scaffold-bundle",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-23T10:36:21Z",
+          "completed_at": "2026-11-23T10:40:11Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev python -m scripts.distributions archive --bundle artifacts/scaffold-bundle",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-23T10:40:11Z",
+          "completed_at": "2026-11-23T10:40:12Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-23T10:40:12Z",
+          "completed_at": "2026-11-23T10:40:14Z"
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-11-23T10:40:14Z",
+          "completed_at": "2026-11-23T10:40:14Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-11-23T10:40:14Z",
+          "completed_at": "2026-11-23T10:40:14Z"
+        },
+        {
+          "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-11-23T10:40:14Z",
+          "completed_at": "2026-11-23T10:40:15Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-11-23T10:40:15Z",
+          "completed_at": "2026-11-23T10:40:18Z"
+        }
+      ]
+    },
+    {
+      "id": 137633708285,
+      "name": "Installed distributions (windows-2025)",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-23T10:35:12Z",
+      "completed_at": "2026-11-23T10:42:30Z",
+      "run_id": 45156202495,
+      "run_attempt": 1,
+      "head_sha": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+      "html_url": "https://github.com/nashspence/fishhat/actions/runs/45156202495/job/137633708285",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-23T10:35:13Z",
+          "completed_at": "2026-11-23T10:35:15Z"
+        },
+        {
+          "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-23T10:35:15Z",
+          "completed_at": "2026-11-23T10:35:22Z"
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-23T10:35:22Z",
+          "completed_at": "2026-11-23T10:35:22Z"
+        },
+        {
+          "name": "Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-23T10:35:22Z",
+          "completed_at": "2026-11-23T10:35:26Z"
+        },
+        {
+          "name": "Run uv sync --locked --all-packages --group dev --python 3.12",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-23T10:35:26Z",
+          "completed_at": "2026-11-23T10:35:42Z"
+        },
+        {
+          "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-23T10:35:42Z",
+          "completed_at": "2026-11-23T10:35:44Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev python -m scripts.distributions prepare --bundle artifacts/scaffold-bundle",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-23T10:35:44Z",
+          "completed_at": "2026-11-23T10:35:52Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev python -m scripts.distributions smoke --bundle artifacts/scaffold-bundle",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-23T10:35:52Z",
+          "completed_at": "2026-11-23T10:42:23Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev python -m scripts.distributions archive --bundle artifacts/scaffold-bundle",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-23T10:42:23Z",
+          "completed_at": "2026-11-23T10:42:24Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-23T10:42:24Z",
+          "completed_at": "2026-11-23T10:42:26Z"
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-11-23T10:42:26Z",
+          "completed_at": "2026-11-23T10:42:26Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-11-23T10:42:26Z",
+          "completed_at": "2026-11-23T10:42:26Z"
+        },
+        {
+          "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-11-23T10:42:26Z",
+          "completed_at": "2026-11-23T10:42:28Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-11-23T10:42:28Z",
+          "completed_at": "2026-11-23T10:42:28Z"
+        }
+      ]
+    },
+    {
+      "id": 137635743160,
+      "name": "Disposable Linux restored/source comparison (not owner qualification)",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-23T10:41:05Z",
+      "completed_at": "2026-11-23T11:00:03Z",
+      "run_id": 45156202495,
+      "run_attempt": 1,
+      "head_sha": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+      "html_url": "https://github.com/nashspence/fishhat/actions/runs/45156202495/job/137635743160",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-23T10:41:06Z",
+          "completed_at": "2026-11-23T10:41:08Z"
+        },
+        {
+          "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-23T10:41:08Z",
+          "completed_at": "2026-11-23T10:41:14Z"
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-23T10:41:14Z",
+          "completed_at": "2026-11-23T10:41:14Z"
+        },
+        {
+          "name": "Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-23T10:41:14Z",
+          "completed_at": "2026-11-23T10:41:17Z"
+        },
+        {
+          "name": "Run uv sync --locked --all-packages --group dev --python 3.12",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-23T10:41:17Z",
+          "completed_at": "2026-11-23T10:41:28Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python 3.12 python -m scripts.native_linux_enrollment --github-hosted-only --profile restored-successor --output artifacts/native-roundtrip/restored-successor.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-23T10:41:28Z",
+          "completed_at": "2026-11-23T11:00:00Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-23T11:00:00Z",
+          "completed_at": "2026-11-23T11:00:01Z"
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-23T11:00:01Z",
+          "completed_at": "2026-11-23T11:00:01Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-23T11:00:01Z",
+          "completed_at": "2026-11-23T11:00:01Z"
+        },
+        {
+          "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-11-23T11:00:01Z",
+          "completed_at": "2026-11-23T11:00:01Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-11-23T11:00:01Z",
+          "completed_at": "2026-11-23T11:00:01Z"
+        }
+      ]
+    },
+    {
+      "id": 137635743188,
+      "name": "Unit shard (Python 3.12, 1)",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-23T10:38:45Z",
+      "completed_at": "2026-11-23T11:13:11Z",
+      "run_id": 45156202495,
+      "run_attempt": 1,
+      "head_sha": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+      "html_url": "https://github.com/nashspence/fishhat/actions/runs/45156202495/job/137635743188",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-23T10:38:45Z",
+          "completed_at": "2026-11-23T10:38:47Z"
+        },
+        {
+          "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-23T10:38:47Z",
+          "completed_at": "2026-11-23T10:38:48Z"
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-23T10:38:48Z",
+          "completed_at": "2026-11-23T10:38:48Z"
+        },
+        {
+          "name": "Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-23T10:38:48Z",
+          "completed_at": "2026-11-23T10:38:51Z"
+        },
+        {
+          "name": "Run uv sync --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\"",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-23T10:38:51Z",
+          "completed_at": "2026-11-23T10:39:05Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python scripts/check_public.py",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-23T10:39:05Z",
+          "completed_at": "2026-11-23T10:39:06Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m scripts.check_contracts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-23T10:39:06Z",
+          "completed_at": "2026-11-23T10:39:10Z"
+        },
+        {
+          "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-23T10:39:10Z",
+          "completed_at": "2026-11-23T10:39:10Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m pytest --collect-only -q tests --unit-shard-plan-output=artifacts/unit-plan.json --unit-shard-reference=artifacts/unit-duration-reference/3.12.xml",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-23T10:39:10Z",
+          "completed_at": "2026-11-23T10:40:08Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m scripts.unit_shards run --index 1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-23T10:40:08Z",
+          "completed_at": "2026-11-23T11:13:07Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-11-23T11:13:07Z",
+          "completed_at": "2026-11-23T11:13:09Z"
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-11-23T11:13:09Z",
+          "completed_at": "2026-11-23T11:13:09Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-11-23T11:13:09Z",
+          "completed_at": "2026-11-23T11:13:09Z"
+        },
+        {
+          "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 22,
+          "started_at": "2026-11-23T11:13:09Z",
+          "completed_at": "2026-11-23T11:13:09Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23,
+          "started_at": "2026-11-23T11:13:09Z",
+          "completed_at": "2026-11-23T11:13:09Z"
+        }
+      ]
+    },
+    {
+      "id": 137635743229,
+      "name": "Unit shard (Python 3.11, 0)",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-23T10:40:22Z",
+      "completed_at": "2026-11-23T11:03:46Z",
+      "run_id": 45156202495,
+      "run_attempt": 1,
+      "head_sha": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+      "html_url": "https://github.com/nashspence/fishhat/actions/runs/45156202495/job/137635743229",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-23T10:40:23Z",
+          "completed_at": "2026-11-23T10:40:25Z"
+        },
+        {
+          "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-23T10:40:25Z",
+          "completed_at": "2026-11-23T10:40:26Z"
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-23T10:40:26Z",
+          "completed_at": "2026-11-23T10:40:27Z"
+        },
+        {
+          "name": "Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-23T10:40:27Z",
+          "completed_at": "2026-11-23T10:40:29Z"
+        },
+        {
+          "name": "Run uv sync --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\"",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-23T10:40:29Z",
+          "completed_at": "2026-11-23T10:40:40Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python scripts/check_public.py",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-23T10:40:40Z",
+          "completed_at": "2026-11-23T10:40:41Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m scripts.check_contracts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-23T10:40:41Z",
+          "completed_at": "2026-11-23T10:40:44Z"
+        },
+        {
+          "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-23T10:40:44Z",
+          "completed_at": "2026-11-23T10:40:45Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m pytest --collect-only -q tests --unit-shard-plan-output=artifacts/unit-plan.json --unit-shard-reference=artifacts/unit-duration-reference/3.11.xml",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-23T10:40:45Z",
+          "completed_at": "2026-11-23T10:41:40Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m scripts.unit_shards run --index 0",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-23T10:41:40Z",
+          "completed_at": "2026-11-23T11:03:42Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-11-23T11:03:42Z",
+          "completed_at": "2026-11-23T11:03:44Z"
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-11-23T11:03:44Z",
+          "completed_at": "2026-11-23T11:03:44Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-11-23T11:03:44Z",
+          "completed_at": "2026-11-23T11:03:44Z"
+        },
+        {
+          "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 22,
+          "started_at": "2026-11-23T11:03:44Z",
+          "completed_at": "2026-11-23T11:03:44Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23,
+          "started_at": "2026-11-23T11:03:44Z",
+          "completed_at": "2026-11-23T11:03:44Z"
+        }
+      ]
+    },
+    {
+      "id": 137635743259,
+      "name": "Unit shard (Python 3.11, 1)",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-23T10:43:03Z",
+      "completed_at": "2026-11-23T11:05:35Z",
+      "run_id": 45156202495,
+      "run_attempt": 1,
+      "head_sha": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+      "html_url": "https://github.com/nashspence/fishhat/actions/runs/45156202495/job/137635743259",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-23T10:43:03Z",
+          "completed_at": "2026-11-23T10:43:06Z"
+        },
+        {
+          "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-23T10:43:06Z",
+          "completed_at": "2026-11-23T10:43:10Z"
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-23T10:43:10Z",
+          "completed_at": "2026-11-23T10:43:11Z"
+        },
+        {
+          "name": "Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-23T10:43:11Z",
+          "completed_at": "2026-11-23T10:43:13Z"
+        },
+        {
+          "name": "Run uv sync --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\"",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-23T10:43:13Z",
+          "completed_at": "2026-11-23T10:43:23Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python scripts/check_public.py",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-23T10:43:23Z",
+          "completed_at": "2026-11-23T10:43:24Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m scripts.check_contracts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-23T10:43:24Z",
+          "completed_at": "2026-11-23T10:43:27Z"
+        },
+        {
+          "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-23T10:43:27Z",
+          "completed_at": "2026-11-23T10:43:27Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m pytest --collect-only -q tests --unit-shard-plan-output=artifacts/unit-plan.json --unit-shard-reference=artifacts/unit-duration-reference/3.11.xml",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-23T10:43:27Z",
+          "completed_at": "2026-11-23T10:44:23Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m scripts.unit_shards run --index 1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-23T10:44:23Z",
+          "completed_at": "2026-11-23T11:05:32Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-11-23T11:05:32Z",
+          "completed_at": "2026-11-23T11:05:33Z"
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-11-23T11:05:33Z",
+          "completed_at": "2026-11-23T11:05:33Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-11-23T11:05:33Z",
+          "completed_at": "2026-11-23T11:05:33Z"
+        },
+        {
+          "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 22,
+          "started_at": "2026-11-23T11:05:33Z",
+          "completed_at": "2026-11-23T11:05:33Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23,
+          "started_at": "2026-11-23T11:05:33Z",
+          "completed_at": "2026-11-23T11:05:33Z"
+        }
+      ]
+    },
+    {
+      "id": 137635743298,
+      "name": "Unit shard (Python 3.12, 0)",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-23T10:42:33Z",
+      "completed_at": "2026-11-23T11:03:36Z",
+      "run_id": 45156202495,
+      "run_attempt": 1,
+      "head_sha": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+      "html_url": "https://github.com/nashspence/fishhat/actions/runs/45156202495/job/137635743298",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-23T10:42:34Z",
+          "completed_at": "2026-11-23T10:42:37Z"
+        },
+        {
+          "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-23T10:42:37Z",
+          "completed_at": "2026-11-23T10:42:42Z"
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-23T10:42:42Z",
+          "completed_at": "2026-11-23T10:42:42Z"
+        },
+        {
+          "name": "Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-23T10:42:42Z",
+          "completed_at": "2026-11-23T10:42:47Z"
+        },
+        {
+          "name": "Run uv sync --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\"",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-23T10:42:47Z",
+          "completed_at": "2026-11-23T10:42:58Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python scripts/check_public.py",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-23T10:42:58Z",
+          "completed_at": "2026-11-23T10:42:59Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m scripts.check_contracts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-23T10:42:59Z",
+          "completed_at": "2026-11-23T10:43:02Z"
+        },
+        {
+          "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-23T10:43:02Z",
+          "completed_at": "2026-11-23T10:43:04Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m pytest --collect-only -q tests --unit-shard-plan-output=artifacts/unit-plan.json --unit-shard-reference=artifacts/unit-duration-reference/3.12.xml",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-23T10:43:04Z",
+          "completed_at": "2026-11-23T10:43:53Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m scripts.unit_shards run --index 0",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-23T10:43:53Z",
+          "completed_at": "2026-11-23T11:03:30Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-11-23T11:03:30Z",
+          "completed_at": "2026-11-23T11:03:32Z"
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-11-23T11:03:32Z",
+          "completed_at": "2026-11-23T11:03:32Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-11-23T11:03:32Z",
+          "completed_at": "2026-11-23T11:03:32Z"
+        },
+        {
+          "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 22,
+          "started_at": "2026-11-23T11:03:32Z",
+          "completed_at": "2026-11-23T11:03:33Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23,
+          "started_at": "2026-11-23T11:03:33Z",
+          "completed_at": "2026-11-23T11:03:33Z"
+        }
+      ]
+    },
+    {
+      "id": 137635743315,
+      "name": "Unit shard (Python 3.13, 1)",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-23T10:39:07Z",
+      "completed_at": "2026-11-23T11:05:54Z",
+      "run_id": 45156202495,
+      "run_attempt": 1,
+      "head_sha": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+      "html_url": "https://github.com/nashspence/fishhat/actions/runs/45156202495/job/137635743315",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-23T10:39:08Z",
+          "completed_at": "2026-11-23T10:39:09Z"
+        },
+        {
+          "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-23T10:39:09Z",
+          "completed_at": "2026-11-23T10:39:11Z"
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-23T10:39:11Z",
+          "completed_at": "2026-11-23T10:39:11Z"
+        },
+        {
+          "name": "Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-23T10:39:11Z",
+          "completed_at": "2026-11-23T10:39:13Z"
+        },
+        {
+          "name": "Run uv sync --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\"",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-23T10:39:13Z",
+          "completed_at": "2026-11-23T10:39:27Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python scripts/check_public.py",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-23T10:39:27Z",
+          "completed_at": "2026-11-23T10:39:28Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m scripts.check_contracts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-23T10:39:28Z",
+          "completed_at": "2026-11-23T10:39:31Z"
+        },
+        {
+          "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-23T10:39:31Z",
+          "completed_at": "2026-11-23T10:39:32Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m pytest --collect-only -q tests --unit-shard-plan-output=artifacts/unit-plan.json --unit-shard-reference=artifacts/unit-duration-reference/3.13.xml",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-23T10:39:32Z",
+          "completed_at": "2026-11-23T10:40:29Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m scripts.unit_shards run --index 1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-23T10:40:29Z",
+          "completed_at": "2026-11-23T11:05:51Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-11-23T11:05:51Z",
+          "completed_at": "2026-11-23T11:05:52Z"
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-11-23T11:05:52Z",
+          "completed_at": "2026-11-23T11:05:52Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-11-23T11:05:52Z",
+          "completed_at": "2026-11-23T11:05:52Z"
+        },
+        {
+          "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 22,
+          "started_at": "2026-11-23T11:05:52Z",
+          "completed_at": "2026-11-23T11:05:52Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23,
+          "started_at": "2026-11-23T11:05:52Z",
+          "completed_at": "2026-11-23T11:05:52Z"
+        }
+      ]
+    },
+    {
+      "id": 137635743341,
+      "name": "Unit shard (Python 3.13, 0)",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-23T10:43:58Z",
+      "completed_at": "2026-11-23T11:01:06Z",
+      "run_id": 45156202495,
+      "run_attempt": 1,
+      "head_sha": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+      "html_url": "https://github.com/nashspence/fishhat/actions/runs/45156202495/job/137635743341",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-23T10:43:59Z",
+          "completed_at": "2026-11-23T10:44:01Z"
+        },
+        {
+          "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-23T10:44:01Z",
+          "completed_at": "2026-11-23T10:44:03Z"
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-23T10:44:03Z",
+          "completed_at": "2026-11-23T10:44:03Z"
+        },
+        {
+          "name": "Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-23T10:44:03Z",
+          "completed_at": "2026-11-23T10:44:06Z"
+        },
+        {
+          "name": "Run uv sync --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\"",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-23T10:44:06Z",
+          "completed_at": "2026-11-23T10:44:16Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python scripts/check_public.py",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-23T10:44:16Z",
+          "completed_at": "2026-11-23T10:44:17Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m scripts.check_contracts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-23T10:44:17Z",
+          "completed_at": "2026-11-23T10:44:20Z"
+        },
+        {
+          "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-23T10:44:20Z",
+          "completed_at": "2026-11-23T10:44:21Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m pytest --collect-only -q tests --unit-shard-plan-output=artifacts/unit-plan.json --unit-shard-reference=artifacts/unit-duration-reference/3.13.xml",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-23T10:44:21Z",
+          "completed_at": "2026-11-23T10:45:04Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m scripts.unit_shards run --index 0",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-23T10:45:04Z",
+          "completed_at": "2026-11-23T11:01:01Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-11-23T11:01:01Z",
+          "completed_at": "2026-11-23T11:01:03Z"
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-11-23T11:01:03Z",
+          "completed_at": "2026-11-23T11:01:03Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-11-23T11:01:03Z",
+          "completed_at": "2026-11-23T11:01:03Z"
+        },
+        {
+          "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 22,
+          "started_at": "2026-11-23T11:01:03Z",
+          "completed_at": "2026-11-23T11:01:03Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23,
+          "started_at": "2026-11-23T11:01:03Z",
+          "completed_at": "2026-11-23T11:01:03Z"
+        }
+      ]
+    },
+    {
+      "id": 137636936890,
+      "name": "Disposable Linux controller prerequisites (not owner qualification)",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-23T10:44:13Z",
+      "completed_at": "2026-11-23T12:08:04Z",
+      "run_id": 45156202495,
+      "run_attempt": 1,
+      "head_sha": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+      "html_url": "https://github.com/nashspence/fishhat/actions/runs/45156202495/job/137636936890",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-23T10:44:13Z",
+          "completed_at": "2026-11-23T10:44:16Z"
+        },
+        {
+          "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-23T10:44:16Z",
+          "completed_at": "2026-11-23T10:44:19Z"
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-23T10:44:19Z",
+          "completed_at": "2026-11-23T10:44:20Z"
+        },
+        {
+          "name": "Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-23T10:44:20Z",
+          "completed_at": "2026-11-23T10:44:23Z"
+        },
+        {
+          "name": "Run uv sync --locked --all-packages --group dev --python 3.12",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-23T10:44:23Z",
+          "completed_at": "2026-11-23T10:44:33Z"
+        },
+        {
+          "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-23T10:44:33Z",
+          "completed_at": "2026-11-23T10:44:34Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python 3.12 python -m scripts.native_linux_enrollment --github-hosted-only --output artifacts/native-fixture/controller-enrollment.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-23T10:44:34Z",
+          "completed_at": "2026-11-23T12:07:30Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-23T12:07:30Z",
+          "completed_at": "2026-11-23T12:08:02Z"
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-11-23T12:08:02Z",
+          "completed_at": "2026-11-23T12:08:02Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-11-23T12:08:02Z",
+          "completed_at": "2026-11-23T12:08:03Z"
+        },
+        {
+          "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-11-23T12:08:03Z",
+          "completed_at": "2026-11-23T12:08:03Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-11-23T12:08:03Z",
+          "completed_at": "2026-11-23T12:08:03Z"
+        }
+      ]
+    },
+    {
+      "id": 137653392210,
+      "name": "Contracts and unit tests (Python 3.11)",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-23T11:13:15Z",
+      "completed_at": "2026-11-23T11:13:51Z",
+      "run_id": 45156202495,
+      "run_attempt": 1,
+      "head_sha": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+      "html_url": "https://github.com/nashspence/fishhat/actions/runs/45156202495/job/137653392210",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-23T11:13:16Z",
+          "completed_at": "2026-11-23T11:13:18Z"
+        },
+        {
+          "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-23T11:13:18Z",
+          "completed_at": "2026-11-23T11:13:19Z"
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-23T11:13:19Z",
+          "completed_at": "2026-11-23T11:13:20Z"
+        },
+        {
+          "name": "Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-23T11:13:20Z",
+          "completed_at": "2026-11-23T11:13:22Z"
+        },
+        {
+          "name": "Run uv sync --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\"",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-23T11:13:22Z",
+          "completed_at": "2026-11-23T11:13:31Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python scripts/check_public.py",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-23T11:13:31Z",
+          "completed_at": "2026-11-23T11:13:32Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m scripts.check_contracts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-23T11:13:32Z",
+          "completed_at": "2026-11-23T11:13:35Z"
+        },
+        {
+          "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-23T11:13:35Z",
+          "completed_at": "2026-11-23T11:13:36Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m scripts.unit_shards aggregate",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-23T11:13:36Z",
+          "completed_at": "2026-11-23T11:13:39Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m scripts.operation_qualification report --require-current-proofs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-23T11:13:39Z",
+          "completed_at": "2026-11-23T11:13:40Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m scripts.engineering report --require-current-proofs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-11-23T11:13:40Z",
+          "completed_at": "2026-11-23T11:13:47Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-23T11:13:47Z",
+          "completed_at": "2026-11-23T11:13:49Z"
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 22,
+          "started_at": "2026-11-23T11:13:49Z",
+          "completed_at": "2026-11-23T11:13:49Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23,
+          "started_at": "2026-11-23T11:13:49Z",
+          "completed_at": "2026-11-23T11:13:49Z"
+        },
+        {
+          "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 24,
+          "started_at": "2026-11-23T11:13:49Z",
+          "completed_at": "2026-11-23T11:13:49Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 25,
+          "started_at": "2026-11-23T11:13:49Z",
+          "completed_at": "2026-11-23T11:13:49Z"
+        }
+      ]
+    },
+    {
+      "id": 137653392342,
+      "name": "Contracts and unit tests (Python 3.13)",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-23T11:17:35Z",
+      "completed_at": "2026-11-23T11:18:24Z",
+      "run_id": 45156202495,
+      "run_attempt": 1,
+      "head_sha": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+      "html_url": "https://github.com/nashspence/fishhat/actions/runs/45156202495/job/137653392342",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-23T11:17:36Z",
+          "completed_at": "2026-11-23T11:17:39Z"
+        },
+        {
+          "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-23T11:17:39Z",
+          "completed_at": "2026-11-23T11:17:44Z"
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-23T11:17:44Z",
+          "completed_at": "2026-11-23T11:17:45Z"
+        },
+        {
+          "name": "Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-23T11:17:45Z",
+          "completed_at": "2026-11-23T11:17:48Z"
+        },
+        {
+          "name": "Run uv sync --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\"",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-23T11:17:48Z",
+          "completed_at": "2026-11-23T11:17:59Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python scripts/check_public.py",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-23T11:17:59Z",
+          "completed_at": "2026-11-23T11:18:00Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m scripts.check_contracts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-23T11:18:00Z",
+          "completed_at": "2026-11-23T11:18:03Z"
+        },
+        {
+          "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-23T11:18:03Z",
+          "completed_at": "2026-11-23T11:18:05Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m scripts.unit_shards aggregate",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-23T11:18:05Z",
+          "completed_at": "2026-11-23T11:18:08Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m scripts.operation_qualification report --require-current-proofs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-23T11:18:08Z",
+          "completed_at": "2026-11-23T11:18:10Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m scripts.engineering report --require-current-proofs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-11-23T11:18:10Z",
+          "completed_at": "2026-11-23T11:18:17Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-23T11:18:17Z",
+          "completed_at": "2026-11-23T11:18:20Z"
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 22,
+          "started_at": "2026-11-23T11:18:20Z",
+          "completed_at": "2026-11-23T11:18:20Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23,
+          "started_at": "2026-11-23T11:18:20Z",
+          "completed_at": "2026-11-23T11:18:20Z"
+        },
+        {
+          "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 24,
+          "started_at": "2026-11-23T11:18:20Z",
+          "completed_at": "2026-11-23T11:18:20Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 25,
+          "started_at": "2026-11-23T11:18:20Z",
+          "completed_at": "2026-11-23T11:18:20Z"
+        }
+      ]
+    },
+    {
+      "id": 137653392420,
+      "name": "Contracts and unit tests (Python 3.12)",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-23T11:19:58Z",
+      "completed_at": "2026-11-23T11:20:47Z",
+      "run_id": 45156202495,
+      "run_attempt": 1,
+      "head_sha": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+      "html_url": "https://github.com/nashspence/fishhat/actions/runs/45156202495/job/137653392420",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-23T11:19:59Z",
+          "completed_at": "2026-11-23T11:20:02Z"
+        },
+        {
+          "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-23T11:20:02Z",
+          "completed_at": "2026-11-23T11:20:07Z"
+        },
+        {
+          "name": "Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-23T11:20:07Z",
+          "completed_at": "2026-11-23T11:20:07Z"
+        },
+        {
+          "name": "Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-23T11:20:07Z",
+          "completed_at": "2026-11-23T11:20:12Z"
+        },
+        {
+          "name": "Run uv sync --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\"",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-23T11:20:12Z",
+          "completed_at": "2026-11-23T11:20:22Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python scripts/check_public.py",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-23T11:20:22Z",
+          "completed_at": "2026-11-23T11:20:23Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m scripts.check_contracts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-23T11:20:23Z",
+          "completed_at": "2026-11-23T11:20:26Z"
+        },
+        {
+          "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-23T11:20:26Z",
+          "completed_at": "2026-11-23T11:20:28Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m scripts.unit_shards aggregate",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-23T11:20:28Z",
+          "completed_at": "2026-11-23T11:20:32Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m scripts.operation_qualification report --require-current-proofs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-23T11:20:32Z",
+          "completed_at": "2026-11-23T11:20:34Z"
+        },
+        {
+          "name": "Run uv run --locked --all-packages --group dev --python \"$FISHHAT_CI_PYTHON\" python -m scripts.engineering report --require-current-proofs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-11-23T11:20:34Z",
+          "completed_at": "2026-11-23T11:20:41Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-23T11:20:41Z",
+          "completed_at": "2026-11-23T11:20:44Z"
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 22,
+          "started_at": "2026-11-23T11:20:44Z",
+          "completed_at": "2026-11-23T11:20:44Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23,
+          "started_at": "2026-11-23T11:20:44Z",
+          "completed_at": "2026-11-23T11:20:44Z"
+        },
+        {
+          "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 24,
+          "started_at": "2026-11-23T11:20:44Z",
+          "completed_at": "2026-11-23T11:20:44Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 25,
+          "started_at": "2026-11-23T11:20:44Z",
+          "completed_at": "2026-11-23T11:20:44Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "source": "https://github.com/nashspence/fishhat/actions/runs/45156202495/job/137635743188",
+  "retrieval": "GitHub job logs API decoded text; full log only in scratch",
+  "source_commit": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+  "run_id": 45156202495,
+  "run_attempt": 1,
+  "job_id": 137635743188,
+  "full_decoded_log_bytes": 1080571,
+  "full_decoded_log_sha256": "3da41007f9a61147e53a6e90dec34a2687bdf87883b0724857fcf11ed0cce181",
+  "excerpt_file": "accepted-slow-unit-excerpt.log",
+  "excerpt_sha256": "5a24e904c445a14f7e8f1cefef6b332a98e20ff2e32ad55baba59403ff0cc9c5",
+  "pytest_seconds": 1976.4,
+  "passed_tests": 3625,
+  "passed_subtests": 172,
+  "scope": "one shard, Python 3.12, shard 1; not complete unit coverage alone"
+}

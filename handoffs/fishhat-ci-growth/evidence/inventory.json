@@ -1,0 +1,40 @@
+{
+  "purpose": "Byte identity of retained research inputs, not native qualification or independent authentication of their claims. Commit identity binds this inventory.",
+  "files": [
+    {
+      "path": "accepted-main-jobs.json",
+      "bytes": 115244,
+      "sha256": "b516bfb370e1ebc45faca0cfa7a82f9feb2dadb08153e1dba2bde5fb559049f3"
+    },
+    {
+      "path": "accepted-main-run.json",
+      "bytes": 377,
+      "sha256": "9f865b7b971533e2cff830caca56201db0e7894a56eb11b5976e870cf39781c5"
+    },
+    {
+      "path": "accepted-slow-unit-excerpt-metadata.json",
+      "bytes": 741,
+      "sha256": "3cbadff4d57d6750e8cce9dc2e1c16db2253833e7ade43942395d829fa642a35"
+    },
+    {
+      "path": "accepted-slow-unit-excerpt.log",
+      "bytes": 4424,
+      "sha256": "5a24e904c445a14f7e8f1cefef6b332a98e20ff2e32ad55baba59403ff0cc9c5"
+    },
+    {
+      "path": "copy-disk-static-count.json",
+      "bytes": 435,
+      "sha256": "44be1a551ccc7639e48a83c6cedb6b89655fed7441c9db569ffd61f2807a9711"
+    },
+    {
+      "path": "issue-84-comments.json",
+      "bytes": 16578,
+      "sha256": "00629c282384977d8309b389b606945627595f9c049ae38b670f2f0d2d5b1091"
+    },
+    {
+      "path": "source-inventory.json",
+      "bytes": 20027,
+      "sha256": "cb6573a44a6b6aae97707c6bfa161767859d84da22a7eb5e320f17072615b5f8"
+    }
+  ]
+}

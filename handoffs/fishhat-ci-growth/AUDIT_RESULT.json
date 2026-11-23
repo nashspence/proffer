@@ -1,0 +1,44 @@
+{
+  "actions": {
+    "controller_seconds": 5031.0,
+    "enrollment_step_seconds": 4976.0,
+    "job_outcomes": {
+      "skipped": 1,
+      "success": 25
+    },
+    "jobs": 26,
+    "longest_unit_job_seconds": 2066.0,
+    "occupied_job_seconds": 16597.0,
+    "occupied_runner_minutes": 276.6166666666667,
+    "one_shard_pytest_seconds": 1976.4,
+    "one_shard_subtests": 172,
+    "one_shard_tests": 3625,
+    "run_attempt": 1,
+    "run_id": 45156202495,
+    "upload_step_seconds": 32.0,
+    "workflow_wait_seconds": 6066.0
+  },
+  "contracts": {
+    "checkout_bytes_verified": true,
+    "groups": [
+      {
+        "bytes": 1942687,
+        "count": 73,
+        "group": "schemas"
+      },
+      {
+        "bytes": 99591,
+        "count": 8,
+        "group": "catalogues"
+      }
+    ],
+    "total_bytes": 2042278
+  },
+  "copy_callbacks": {
+    "method": "Pinned-source AST call expansion, not dynamic execution or general flow analysis",
+    "nested_two_scans_per_restore_callback": "Manually reviewed call graph; see HANDOFF.md",
+    "normal_success_callbacks_per_copied_disk": 14
+  },
+  "retained_files_verified": 7,
+  "scope": "Offline research arithmetic and static source audit, not native qualification"
+}

@@ -1,0 +1,428 @@
+{
+  "repository": "nashspence/fishhat",
+  "commit": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+  "tree": "32c329bd30e41405eaf49d3fc81577682cc00ccb",
+  "method": "Static byte inventory of contracts/*.schema.json and other contracts/*.json; no fishhat code imported or native workload executed. Source-file length is not measured per-process physical I/O.",
+  "groups": [
+    {
+      "group": "schemas",
+      "count": 73,
+      "bytes": 1942687,
+      "files": [
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/actions.schema.json",
+          "bytes": 66816,
+          "sha256": "7af9e7c60fad6106c861802ef8df0b966613cd34f0c385ec8604824c05a19c18"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/adapter-process.schema.json",
+          "bytes": 23586,
+          "sha256": "613860d674cbe59d42d44a0b0211803b79f8388c0511014e859c185e55af8079"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/adapter.schema.json",
+          "bytes": 93482,
+          "sha256": "fdc9c8210615b5fe20e7730b088681aafb2f8b020c006eda505eb89a9060ddbe"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/backup-adapter.schema.json",
+          "bytes": 39163,
+          "sha256": "6b5b251649ae35e0724d185584a7cbde7435ec760ccc7dd4e7e2df28a09c7d54"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/backup-result.schema.json",
+          "bytes": 4885,
+          "sha256": "da9a5bfdd5f131e5c8336838326fd36debe3f3b0bc99d4d343b7cc90f376d982"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/bootstrap-catalogue.schema.json",
+          "bytes": 2063,
+          "sha256": "e9e3b95dc8799eb3bbed21b22066de18f35af9099f527b4bcbb9e8cd2e141694"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/bootstrap-recovery.schema.json",
+          "bytes": 5389,
+          "sha256": "c327b067801c67e40b3d9be3e3123b3ca695eb7dc043ef86579154104e9e749a"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/bootstrap-source-adapter.schema.json",
+          "bytes": 21996,
+          "sha256": "2a8352bce3a3d9829b6319dd5ffaa8dfa572533282ac6c486d6b4d0830116b55"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/build-adapter.schema.json",
+          "bytes": 16769,
+          "sha256": "e5cbb891e690b02de49b33da3c31d88ec82b9da458469a11c2ebd31c9bac0452"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/bundle-manifest.schema.json",
+          "bytes": 2172,
+          "sha256": "6e258c928b38fb73992f11dd318e7febe05eb396f7f03c1829830f16eab8f598"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/cancellation.schema.json",
+          "bytes": 12302,
+          "sha256": "e9a9bcebac4ad2305112aca2e34de88a7211c44897f49f91a21d3f49f7053136"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/capture-adapter.schema.json",
+          "bytes": 30254,
+          "sha256": "58e93f754726b7caecff38addb941e73bb6f712fcc39c5dd06ffc541db008727"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/cli-output.schema.json",
+          "bytes": 10177,
+          "sha256": "e9c8f1c2e6c451981c8630a31e84e0a1919267a470b6e8da97f098c87b02e70f"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/client-records.schema.json",
+          "bytes": 15666,
+          "sha256": "d0b8e53c162092b034aa7fd6151e5981caff17823a12b8fdcd93c74526f7696b"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/common.schema.json",
+          "bytes": 37736,
+          "sha256": "e71109a50fe37a19d0ffe2a096014766044977d1cee26d091eabe4f0d858802b"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/compute-adapter.schema.json",
+          "bytes": 31819,
+          "sha256": "8f40080578db0b82c1393694f56296ab396390e07a00d487fc63287f8316d3a3"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/credential-issuer-adapter.schema.json",
+          "bytes": 32365,
+          "sha256": "0a60e5f93c0c722e0286962a4e6153082210fe681d95b49c2ce628e398dc9e8a"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/dataset-obligations.schema.json",
+          "bytes": 13685,
+          "sha256": "546db801823a99fd9325d5af981c5f6f9174bcb0a07fc527449e0232ad3d418d"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/directory-release.schema.json",
+          "bytes": 3798,
+          "sha256": "e8c7c6a9b64e8b840cdb7998578cdbc363abd2a9d09dd431ebb8ee340e0c7b3c"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/directory-result.schema.json",
+          "bytes": 12543,
+          "sha256": "3f1e8e9adc1d32b412b326562a2e55ef996e2a0e029aa745c7459b04e82f6e57"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/directory-runtime.schema.json",
+          "bytes": 3355,
+          "sha256": "9d49439ed06ba3b6082e62548a915c5b89c921e2b376c2de7c562be5251985a5"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/directory.schema.json",
+          "bytes": 4320,
+          "sha256": "bb18dbebd5d06c09e73ccf4ddf3638287b5ff0d88555cfb21be89a57c39ed737"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/dns-adapter.schema.json",
+          "bytes": 23173,
+          "sha256": "99f813f7fd1875baba1bfc6714170c773e2fbccf9a13eae2e9faa55ce28ece60"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/dns-changes.schema.json",
+          "bytes": 4626,
+          "sha256": "91a8c2a92f81ceb595cb5c6672816e2595f29979a778575f795b8c9b066f8b8e"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/dns-intent.schema.json",
+          "bytes": 20186,
+          "sha256": "0fa8b6342d3f05b3606ef0a524bfff63115bdf5d1fe604fee205527f154a0e50"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/drill-result.schema.json",
+          "bytes": 8046,
+          "sha256": "0413932bf43149c2d8cef750775464ee04e866bf7e63996b66fc8022401832f3"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/durability.schema.json",
+          "bytes": 21043,
+          "sha256": "f2f81c9cc39b9b3a3a0c44e8b2b4487a01384ac508139ab3cd850ff6ae494ddb"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/hook-request.schema.json",
+          "bytes": 11529,
+          "sha256": "b9c82fd0517298aa1f57a936e332fdc679bf51c8668de00c0583f951b4961328"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/hook-result.schema.json",
+          "bytes": 5511,
+          "sha256": "ce635ea0d35bfb672ddc0d084920f420473acd013261db887524837f88235692"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/host-preimages.schema.json",
+          "bytes": 10163,
+          "sha256": "621a4c2e23698e421632a1e387f9ea0a30639f481f483153ef5bfe4fc24e74a4"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/ingress-adapter.schema.json",
+          "bytes": 28321,
+          "sha256": "a5651d6315c55cbeebd929edde0a5272f6def04e16b992379f5de4e0386494f4"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/install-bundle.schema.json",
+          "bytes": 4915,
+          "sha256": "390b8c24c3cefef96b3272c77cd8cf771bd12f0444f6ad94c880b673b08b6132"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/lifecycle-evidence.schema.json",
+          "bytes": 28172,
+          "sha256": "ff569968b47e4dbfe96d8873e3618bc2af6d278141ae103455a7bba20eb1433a"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/maintenance.schema.json",
+          "bytes": 15441,
+          "sha256": "efac320bd6f1a6b3ee6f88ed4aed2ece0fb7de7896a63cf503eeb2033ebe2296"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/network-adapter.schema.json",
+          "bytes": 28460,
+          "sha256": "dd581ea2380f20f5770e2c51e9e03e600ed9d26a1be82e820afbee55c3478bb8"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/observation.schema.json",
+          "bytes": 6415,
+          "sha256": "8205e2599405fd915539992f6ab9f711dccf3e5dfa186de8073d0fbc5e87b746"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/onboarding.schema.json",
+          "bytes": 4482,
+          "sha256": "9096ee883c47632603356372d67be04f5642ac1156e671ee83b2f3fa3a96ae32"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/owner-decision-v1.schema.json",
+          "bytes": 13758,
+          "sha256": "5007a912f40703badec4589c1d463552ec262cdc1cc083a006944163eb9b8600"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/owner-history.schema.json",
+          "bytes": 24835,
+          "sha256": "3a1edb685801ea84938738bd42b47a00144a54f0da4e84f0a9735fea9ddfe38a"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/plan-input.schema.json",
+          "bytes": 3570,
+          "sha256": "11070dab4ffc68184b7ad39ab0416e0dc0b7178c8ff8cbf4d15de6093294f00c"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/publisher-receipt.schema.json",
+          "bytes": 5620,
+          "sha256": "3bc1004e1dbdd6525b558c43fa2e9efe50c9a96cc1e45c80c700a9efb67480f1"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/readiness.schema.json",
+          "bytes": 8810,
+          "sha256": "6d28c9961256a4a2b7077a1dafbf03b5a9c9a9f862a2aa62deb930edfaf4f18f"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/receipts-service.schema.json",
+          "bytes": 3915,
+          "sha256": "346e8994c00e206739aec0e504495e4ab2e44a6bdd5605c53d8db8e4ff45f6c9"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/records.schema.json",
+          "bytes": 167401,
+          "sha256": "c104f34cf3895e3147d4a6955386e6e5c622b81e3945dd5fce71929c69c5a45d"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/recovery-point.schema.json",
+          "bytes": 4035,
+          "sha256": "fa3e20a804b2e126cd09c4077705890a96019c933274c95d7c36bb2062a733ea"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/recovery-set.schema.json",
+          "bytes": 5370,
+          "sha256": "136b1b7e146c1168327a1a46e8f2657342a1d136ae892d3fa43632d2c4564f56"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/report-adapter.schema.json",
+          "bytes": 16606,
+          "sha256": "791a8ad2c0601715dde36d16bc44400f9591927e69f2dbde3d1d0b03966fd0de"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/repository-adapter.schema.json",
+          "bytes": 37428,
+          "sha256": "bed76a8147ad29c9524f69fb1560c7f47d4899a19b7c3cb7253f14f36b3765ad"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/resource-admission.schema.json",
+          "bytes": 38458,
+          "sha256": "d72a5090bacda2463e83693ef15f66f2e627dbdf728f3c2c513dd25ee7c1d0b7"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/resource-queue.schema.json",
+          "bytes": 18621,
+          "sha256": "8264cec29979a6663e9baf04d151969a8c97b7629942d053d283a148c761930f"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/resource-records.schema.json",
+          "bytes": 62072,
+          "sha256": "f80407e37cb2b3679225009d07a973f4a3bcd1d7455c8764f1d75eda9cd069ed"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/resources.schema.json",
+          "bytes": 33745,
+          "sha256": "43fd43ad6e0b956eaf666f3f86947de490bee2affcdf92e69325f7ad2fcaa9d0"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/routing-publication.schema.json",
+          "bytes": 5680,
+          "sha256": "1cfc57cf30f3549b5763c1113baf85de1131a843d5bc3540e6f48b8ab8cd5a64"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/runtime-adapter.schema.json",
+          "bytes": 53953,
+          "sha256": "3f8a2517ccb4bf313c6d0898f8b6172e3f5e0dcc3746e6636d940890c0b8978f"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/scheduler-adapter.schema.json",
+          "bytes": 21266,
+          "sha256": "05fbcec50911de251e82869899eb0ebd9ae62ec9e90ccbf29f8161952439e9d1"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/secret-source-adapter.schema.json",
+          "bytes": 31108,
+          "sha256": "2b7811c1ca255765c494824b5a9442e2190a7401d1296eeda287f69737f6e245"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/service-adapter.schema.json",
+          "bytes": 26146,
+          "sha256": "af55caa61cca434fe49ccdbb2c7d19e4f8ce2853424c8a27ea321215ddf048af"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/software-adapter.schema.json",
+          "bytes": 31438,
+          "sha256": "5aca0ddd0026f405c1e6358eadd313aa8739510fc34a4dfd9fb6c8ae1e093469"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/source-closure.schema.json",
+          "bytes": 2608,
+          "sha256": "7634d871c80738aeb91c02c17bc41ba47ac6a244cdaa63d0f001f9a69e482ddc"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/source.schema.json",
+          "bytes": 79633,
+          "sha256": "6e9e83b70d71c0e7001761c2fd38c331c7b58925540a3a9e07169121b5c554c4"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/ssh-request.schema.json",
+          "bytes": 43098,
+          "sha256": "76e380c789161b68f3e0d23e36fb91ba8334d61504f58563417e42499250c0c1"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/ssh-response.schema.json",
+          "bytes": 34536,
+          "sha256": "f0ff7ceeea091a287e3608e80b62d984d0f9013275119367c3e2e43a4d71077d"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/storage-adapter.schema.json",
+          "bytes": 37935,
+          "sha256": "0876f57e0d5832de9986224b732dc3971875ea1614ac42d345c1fab511a36db8"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/test-suite.schema.json",
+          "bytes": 2253,
+          "sha256": "5a1528272f4027bd53871dccb794fa459e413a4396e73f9b1cd43a33c53f482b"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/tool-release.schema.json",
+          "bytes": 5799,
+          "sha256": "ce54c84e7a480d6a2ee533208fd0f8c202d182cb797ad51bb15ee66d3cefc937"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/tracking-profile.schema.json",
+          "bytes": 2476,
+          "sha256": "42182eeb5f9e1075dbbd5dc2d5fb2f95950a147763aa66b5dbedde82107bc7a0"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/tracking-records.schema.json",
+          "bytes": 12213,
+          "sha256": "393fbed4487a4bd68df85d3f8f4a8953b6b6b4643a3f19a18011e7a932f7fcda"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/workflow-evidence.schema.json",
+          "bytes": 44388,
+          "sha256": "7a38147c2a9b9ff4d2cf03fdfc9c2da4a63a0d39a68700ce4eaee1cba6ee69c7"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/workflow-journal.schema.json",
+          "bytes": 237456,
+          "sha256": "5069642835dbea446717bcbb0e05da4125453760302d5fd84c5c86af5eb8eb1e"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/workflow-recovery.schema.json",
+          "bytes": 38291,
+          "sha256": "4fb1c0372c1f96644e62d4f0ae83a7fd833d4a7863de2409e75db8ba729fa365"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/workflow-transfer-history.schema.json",
+          "bytes": 5505,
+          "sha256": "0b1ed77172a10ecba90be75866f9563b01d5ee6cf099c369c8934cc5a17d5652"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/workflow.schema.json",
+          "bytes": 75589,
+          "sha256": "d4a76180b18430036efd1d9fbb96a5d32244961a65d4d5d8f8a75ea1730a984b"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/workspace.schema.json",
+          "bytes": 2248,
+          "sha256": "63d2c5e94a0c780bb5340916abbaac1a9105428ba99ac6102ac2df25fd6b866e"
+        }
+      ]
+    },
+    {
+      "group": "catalogues",
+      "count": 8,
+      "bytes": 99591,
+      "files": [
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/actions.json",
+          "bytes": 15181,
+          "sha256": "d2139b4286ed2f531e4a71a8a1ab38293e2de00197a9560ee37d9c43509cb1bc"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/adapter-roles.json",
+          "bytes": 8684,
+          "sha256": "6e691839ae7303e25ce8268eca0360a62c4220e7de44855980a78388dbffddd2"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/client-commands.json",
+          "bytes": 6430,
+          "sha256": "5b3e29df1fb1fecd18ef5699f8dc89da22c2f2dd6154f9d18a30f18d26db7f3e"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/directory-mcp.json",
+          "bytes": 1161,
+          "sha256": "2194a1ea9cd3b88e16a854fc16f8fac4a83f9c0e95cadeef419451374462d183"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/owner-cli.json",
+          "bytes": 37804,
+          "sha256": "f8d17432379d9141fcd45d49c3f59b693e7d44f150fb6c222b804c2314886757"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/receipts-api.openapi.json",
+          "bytes": 14821,
+          "sha256": "4b220de1de653de01b9fc22b9c68df7981f9a45148b66ca39abebe9d15943dd3"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/ssh-methods.json",
+          "bytes": 3642,
+          "sha256": "dad4dd72e90d18efb57be9617a5a990c62d3b448e4aebb3bf0f35cf1e768a1a3"
+        },
+        {
+          "path": "packages/fishhat-contracts/src/fishhat_contracts/contracts/states.json",
+          "bytes": 11868,
+          "sha256": "419eadbc490fe54790056a705344834627eb32b1b8c1935fbbca48f6f2027aec"
+        }
+      ]
+    }
+  ],
+  "total_bytes": 2042278
+}

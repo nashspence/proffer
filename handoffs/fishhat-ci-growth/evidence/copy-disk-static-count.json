@@ -1,0 +1,11 @@
+{
+  "source": "f96b83dc20f059d62a4363a63c37bb0ef8c642e5",
+  "scope": "static successful straight-line copy_disk callback expansion; no project code executed",
+  "top_level_calls": {
+    "verify": 2,
+    "command": 4,
+    "verify_output": 4
+  },
+  "verify_calls_per_successful_copy": 14,
+  "caveat": "excludes callback-internal recursion and all caller checks; command body calls verify_output twice; verify_output calls verify once"
+}
